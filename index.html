@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="head">
+    <h1 id="title">CodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </div>
+
+  <form id="survey-form">
+    <fieldset>
+      <label for="first-name" id="name-label"> Name <input id="name" type="text" name="first-name" placeholder="Enter your name" required /></label>
+      <label for="email"id="email-label">Email<input id="email" type="email" name="email" placeholder="Enter your email" required/></label>
+      <label for="age" id="number-label">Age<input id="number" type="number" name="age" placeholder="Enter your age" min=14 max="100"/></label>
+
+     <label for="dropdown">Which option best describes your current role?
+      <select id="dropdown" name="dropdown"> 
+          <option value="">Select your current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full Time Job</option>
+          <option value="3">Other</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Account type (required)</legend>
+      <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked value="2"/> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="1"/> Business</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What are your hobbies? </legend>
+      <label for="hobby" ><input type="checkbox" id="hobby" value="1"/>Programming</label>
+       <label for="hobby"><input type="checkbox" id="hobby"value="2"/>Music</label>
+        <label for="hobby"><input type="checkbox" id="hobby"value="3"/>Dance</label>
+         <label for="hobby"><input type="checkbox" id="hobby"value="4"/>Sport</label>
+    </fieldset>
+      
+    <fieldset>
+      <label>Any comments or suggestions?</label>
+      <textarea></textarea>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit"/>
+  </form>
+
+</body>
+</html>
